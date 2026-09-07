@@ -4,7 +4,7 @@ import streamlit as st
 from pathlib import Path
 from pypdf import PdfReader
 
-api = st.secrets["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"]
+api = st.secrets["GROQ_API_KEY"]
 st.title("Revision app")
 
 messager = "You're a teacher to help students revise and improve on their weaknesses before their exams"
