@@ -41,8 +41,8 @@ user_proxy = UserProxyAgent(
 @user_proxy.register_for_execution()
 def pdf_reader(pdf:Annotated[str,"The pdf link that the student sends you"]):
     Reader = PdfReader(pdf)
-
-
+    return Reader
+    
 
 if prompt := st.chat_input("What do you want the agents to do?"):
 
